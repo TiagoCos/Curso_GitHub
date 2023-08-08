@@ -1,0 +1,38 @@
+Git:
+
+git init: Inicializa um novo repositório Git na pasta atual.
+
+git clone <url>: Clona um repositório Git existente para o seu computador a partir de uma URL remota.
+
+git add <arquivo>: Adiciona as mudanças de um arquivo específico à área de staging, preparando-o para ser commitado.
+
+git add . (ou git add --all): Adiciona todas as mudanças de todos os arquivos da pasta atual à área de staging.
+
+git commit -m "mensagem": Cria um novo commit com as mudanças presentes na área de staging e associa uma mensagem explicativa.
+
+git mv <origem> <destino>: Move ou renomeia um arquivo ou diretório no repositório Git. 
+-----------------------------------------------------------------------------------------------------
+
+git status: Mostra o status atual do repositório, incluindo os arquivos modificados, adicionados e excluídos.
+
+git log: Mostra o histórico de commits, exibindo os hashes, autores, datas e mensagens de cada commit.
+
+git branch: Lista todas as branches do repositório e indica em qual branch você está.
+
+git checkout <branch>: Muda para a branch especificada, ou seja, reseta ela como estava.
+
+git merge <branch>: Combina as mudanças da branch especificada com a branch atual.
+
+git pull: Puxa as mudanças do repositório remoto para o repositório local, atualizando a branch atual.
+
+git push: Envia os commits locais para o repositório remoto.
+
+-------------------------------------------Mais comandos---------------------------------------------
+
+git push -u origin main: para enviar para uma branch cadastrada
+
+git remote add origin https://github.com/TiagoCos/Curso_GitHub.git: cadastra uma url base do projeto
+
+git branch -M main: criar a branch principal (ou main ou master)
+
+git reset --hard origien/main :reseta todos os commits e parea o projeto com a (main/master)
