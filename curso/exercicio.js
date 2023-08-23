@@ -10,7 +10,7 @@ Object.defineProperty(person, "profession", {
 
 person.name = "Jane";
 person.profession = "Doctor";
-
+ 
 console.log(person.name)
 console.log(person.profession)
 

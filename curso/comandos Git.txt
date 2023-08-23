@@ -15,17 +15,19 @@ git mv <origem> <destino>: Move ou renomeia um arquivo ou diretório no reposit�
 
 git status: Mostra o status atual do repositório, incluindo os arquivos modificados, adicionados e excluídos.
 
-git log: Mostra o histórico de commits, exibindo os hashes, autores, datas e mensagens de cada commit.
+git log ou git shortlog(para menos): Mostra o histórico de commits, exibindo os hashes, autores, datas e mensagens de cada commit.
 
 git branch: Lista todas as branches do repositório e indica em qual branch você está.
 
-git checkout <branch>: Muda para a branch especificada, ou seja, reseta ela como estava.
+git checkout <branch>: Muda para a branch especificada, ou seja, RESETA ela como estava.
 
 git merge <branch>: Combina as mudanças da branch especificada com a branch atual.
 
 git pull: Puxa as mudanças do repositório remoto para o repositório local, atualizando a branch atual.
 
 git push: Envia os commits locais para o repositório remoto.
+
+git branch <nome> : cria uma nova branch (aviso: irá criar uma nova branch partindo da atual onde você está)
 
 -------------------------------------------Mais comandos---------------------------------------------
 
@@ -35,4 +37,37 @@ git remote add origin https://github.com/TiagoCos/Curso_GitHub.git: cadastra uma
 
 git branch -M main: criar a branch principal (ou main ou master)
 
-git reset --hard origien/main :reseta todos os commits e parea o projeto com a (main/master)
+git reset --hard origin/main :reseta todos os commits e parea o projeto com a (main/master)
+
+git checkout <branch> : Também usada para ir de uma branch para outra (git checkout -b <branch>: cria e muda para a nova branch )
+
+git branch -d <nome da branch> : deleta uma branch especificada
+
+git push origin --all: envia todas as branchs para o repositorio
+
+------------------------------------------------------------------------------------------------------
+git stash: reseta o arquivo incluindo os commit's criando uma lixeira de versão do mesmo arquivo que se acessa 
+(git stash list) e troca de versão com (git stash apply {id}). git stash show -p {id}: mostra as mudanças
+
+git stash drop: exclui uma stash e git stash clear limpa todas
+
+------------------------------------------------------------------------TAGS-------------
+git tag -a <nome> -m <"msg"> : faz um checkpoint no código são versões de um branch (SEMPRE COMMIT SUAS TAGS)
+
+git show: mostra todas e show <nome> uma individual
+
+git chechout <nome da tag>: troca para outra versão da branch
+
+git push origin --tags: envia todas as tags feitas
+
+git fetch -a: mapea e recebe todos os branchs novos
+--------------------------------------------------------um projeto dentro do outro--------------------------------------
+git submodule: mostra os subrepositorios no projeto
+
+git submodule add <repo>: adiciona um repositorio 
+
+git push --recurse-submodules=on-demand: versão do push para enviar submodules
+
+git diff <branch>: mostra diferença entre arquivos
+
+
